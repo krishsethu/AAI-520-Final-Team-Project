@@ -43,9 +43,7 @@ The goal is to move beyond monolithic scripts by creating a modular, agentic fra
 
 Partner(s)/Contributor(s)
 
-[Name of Teammate 1]
-
-[Name of Teammate 2]
+Sethuraman Krishnasamy
 
 Methods Used
 
