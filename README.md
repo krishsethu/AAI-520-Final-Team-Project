@@ -6,7 +6,7 @@ Team Member: Sethuraman Krishnasamy
 
 This project is a part of the AAI-520 course in the Applied Artificial Intelligence Program at the University of San Diego (USD).
 
-Note: Jupyter Python notebook has to be downloaded and opened in Google Colab (due to compatibility issues with GitHub rendering interactive widgets and metadata).
+Note: Jupyter Python notebook has to be downloaded and opened in Google Colab or Visual studio Code (due to compatibility issues with GitHub rendering interactive widgets and metadata).
 
 Files:
 
@@ -15,6 +15,10 @@ Files:
 3. AAI-520 Final Team Project Reqport-Group13-Sethuraman_Krishnasamy.docx - Project Report
 4. ReadNe:
 
+Procedure to Open and view the Jupyter Notebook code:
+a.  Clone Repository Locally and Open in VS Code
+b.  Open Repository Directly from GitHub in VS Code
+c.  Download Notebook and Open in Google Colab or VS Code
 
 I. Installation
 
