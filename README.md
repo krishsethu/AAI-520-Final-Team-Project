@@ -4,8 +4,6 @@ Team Member: Sethuraman Krishnasamy
 
 This project is a part of the AAI-520 course in the Applied Artificial Intelligence Program at the University of San Diego (USD).
 
--- Project Status: Completed
-
 Files included in Repo:
 1. AAI_520_FinalTeam_Project_Sethuraman_Krishnasamy.ipynb - Jupyter Python notebook that has to be downloaded and opened in Google Colab (due to compatibility issues with GitHub rendering interactive widgets and metadata).
 2. AAI_520_FinalTeam_Project_Sethuraman_Krishnasamy.pdf - PDF version of the Jupyter notebook
