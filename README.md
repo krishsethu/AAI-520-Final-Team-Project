@@ -8,50 +8,50 @@ This project is a part of the AAI-520 course in the Applied Artificial Intellige
 
 Files included in Repo:
 1. AAI_520_FinalTeam_Project_Sethuraman_Krishnasamy.ipynb - Jupyter Python notebook that has to be downloaded and opened in Google Colab (due to compatibility issues with GitHub rendering interactive widgets and metadata).
-2.AAI_520_FinalTeam_Project_Sethuraman_Krishnasamy.pdf - PDF version of the Jupyter notebook
-3.AAI-520 Final Team Project Reqport-Group13-Sethuraman_Krishnasamy.docx - Project Report
+2. AAI_520_FinalTeam_Project_Sethuraman_Krishnasamy.pdf - PDF version of the Jupyter notebook
+3. AAI-520 Final Team Project Reqport-Group13-Sethuraman_Krishnasamy.docx - Project Report
 4. ReadNe:
 
-Installation
+
+I. Installation
 
 This project is built in Python and requires several packages to run. It is recommended to use a virtual environment.
 
-Clone the repository:
+II. Clone the repository:
 
 git clone [your-repository-url]
 cd [your-repository-name]
 
 
-Install the required packages:
+III. Install the required packages:
 
-pip install pandas numpy yfinance newsapi-python transformers torch matplotlib seaborn
-
+1. pip install pandas numpy yfinance newsapi-python transformers torch matplotlib seaborn
 
 (Note: torch installation may vary depending on your system's CUDA capabilities. The CPU version is sufficient for this project.)
 
-Add your NewsAPI Key:
+2. Add your NewsAPI Key:
 Open the NewsAgent class file and replace the placeholder API key with your own from NewsAPI.org.
 
 self.api_key = "YOUR_NEWSAPI_KEY"
 
 
-Run the analysis:
+3. Run the main script:
 Execute the main script from your terminal to run the full analysis pipeline.
 
 python main_script.py
 
 
-Project Intro/Objective
+4. Project Introduction and Objective
 
 The main purpose of this project is to develop and implement a Multi-Agent Financial Analysis system designed to reason, act, and deliver intelligent insights on stock investment opportunities. This system orchestrates multiple specialized AI agents, mirroring real-world quantitative research workflows in investment firms.
 
 The goal is to move beyond monolithic scripts by creating a modular, agentic framework where each agent has a specific role (data ingestion, news analysis, quantitative scoring, etc.). The project aims to demonstrate the power of collaborative AI by synthesizing quantitative financial data with qualitative, LLM-driven news sentiment to produce a holistic and explainable investment thesis.
 
-Partner(s)/Contributor(s)
+5: Contributor of Project
 
-Sethuraman Krishnasamy
+Sethuraman Krishnasamy (Main author)
 
-Methods Used
+6. Technologies used:
 
 Natural Language Processing (NLP): For sentiment analysis, text summarization, and cleaning.
 
@@ -61,11 +61,12 @@ Data Visualization: To present analytical results and system performance metrics
 
 Data Manipulation: Extensive use of Pandas for handling and analyzing financial time-series data.
 
-Agentic AI Design: Implementation of Prompt Chaining, Routing, and Evaluator-Optimizer patterns.
+Agentic AI: Implementation of Prompt Chaining, Routing, and Evaluator-Optimizer patterns.
 
-Technologies
 
-Python
+7. Language: Python
+   
+9. Libraries used:
 
 Pandas & NumPy: For data manipulation and numerical computation.
 
@@ -77,35 +78,34 @@ yfinance & newsapi-python: For financial data and news ingestion.
 
 Matplotlib & Seaborn: For generating static plots and visualizations.
 
-Project Description
 
-Project Overview
+10. Project Overview:
 
 This project implements a multi-agent system where specialized agents collaborate to perform a comprehensive stock analysis. The architecture is as follows:
 
-ResearchAgent (Base Class): Provides all agents with core capabilities like logging and persistent memory.
+a) ResearchAgent (Base Class): Provides all agents with core capabilities like logging and persistent memory.
 
-OrchestratorAgent / FinancialAnalysisSystem: The central coordinator that manages the workflow.
+b) OrchestratorAgent / FinancialAnalysisSystem: The central coordinator that manages the workflow.
 
-DataAgent: Ingests quantitative data (stock prices, financials, technical indicators like RSI and MACD) from the Yahoo Finance API.
+c) DataAgent: Ingests quantitative data (stock prices, financials, technical indicators like RSI and MACD) from the Yahoo Finance API.
 
-NewsAgent: A sophisticated agent that ingests news from NewsAPI.org and performs a multi-stage Prompt Chain:
+d) NewsAgent: A sophisticated agent that ingests news from NewsAPI.org and performs a multi-stage Prompt Chain:
 
-Preprocessing: Cleans text.
+e) Preprocessing: Cleans text.
 
-Classification: Uses the cardiffnlp/twitter-roberta-base-sentiment-latest model with prompt engineering to determine sentiment.
+f) Classification: Uses the cardiffnlp/twitter-roberta-base-sentiment-latest model with prompt engineering to determine sentiment.
 
-Routing: Categorizes news for specialized sub-analyzers.
+g) Routing: Categorizes news for specialized sub-analyzers.
 
-Summarization: Uses the facebook/bart-large-cnn model.
+11. LLM MODEL USED: Uses the facebook/bart-large-cnn model.
 
-Evaluation: Scores its own analysis quality for a feedback loop.
+12. Evaluation: Scores its own analysis quality for a feedback loop.
 
-AnalysisAgent: The synthesizer that receives data from the DataAgent and NewsAgent. It uses a weighted model to calculate an overall score and generate a final investment decision and reasoning.
+13. AnalysisAgent: The synthesizer that receives data from the DataAgent and NewsAgent. It uses a weighted model to calculate an overall score and generate a final investment decision and reasoning.
 
-VisualizationEngine: Generates all charts and plots.
-
-Dataset
+14. VisualizationEngine: Generates all charts and plots.
+    
+16. Dataset
 
 The system operates on real-time data fetched from two primary external sources:
 
@@ -113,7 +113,7 @@ Yahoo Finance API: Provides real-time stock prices, historical data, financial s
 
 NewsAPI.org: Provides recent news articles for any given stock symbol.
 
-Analysis and Modeling
+17. Analysis and Modeling
 
 The core hypothesis is that a superior investment thesis can be formed by fusing quantitative metrics with qualitative sentiment analysis. The system explores this by:
 
@@ -127,9 +127,9 @@ Generating a final, human-readable recommendation (e.g., "STRONG BUY", "HOLD") a
 
 Roadblocks and Challenges
 
-A significant challenge was overcoming the inconsistency of the NewsAgent's sentiment analysis. Initial analysis showed that a simple keyword-based or generic LLM approach was insufficient. This was addressed by implementing a hybrid model that uses prompt engineering (adding financial context), LLM classification, and post-processing adjustments (applying financial heuristics) to produce more accurate, context-aware sentiment.
+18. A significant challenge was overcoming the inconsistency of the NewsAgent's sentiment analysis. Initial analysis showed that a simple keyword-based or generic LLM approach was insufficient. This was addressed by implementing a hybrid model that uses prompt engineering (adding financial context), LLM classification, and post-processing adjustments (applying financial heuristics) to produce more accurate, context-aware sentiment.
 
-License
+19. License
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
