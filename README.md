@@ -6,6 +6,12 @@ This project is a part of the AAI-520 course in the Applied Artificial Intellige
 
 -- Project Status: Completed
 
+Files included in Repo:
+1. AAI_520_FinalTeam_Project_Sethuraman_Krishnasamy.ipynb - Jupyter Python notebook that has to be downloaded and opened in Google Colab (due to compatibility issues with GitHub rendering interactive widgets and metadata).
+2.AAI_520_FinalTeam_Project_Sethuraman_Krishnasamy.pdf - PDF version of the Jupyter notebook
+3.AAI-520 Final Team Project Reqport-Group13-Sethuraman_Krishnasamy.docx - Project Report
+4. ReadNe:
+
 Installation
 
 This project is built in Python and requires several packages to run. It is recommended to use a virtual environment.
